@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ManualRecord"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/recordingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00 : 00 : 00"
+            android:textSize="80sp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:id="@+id/mergeAudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Audio Frequency Wave" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.7">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <ImageButton
+                    android:background="@null"
+                    android:id="@+id/recordStop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/play"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"/>
+
+                <ImageButton
+                    android:background="@null"
+                    android:id="@+id/recordList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/list"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

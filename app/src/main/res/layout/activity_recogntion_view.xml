@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UserProfile"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_google_signin_btn_text_light_disabled"
+                android:text="Explore recognition"
+
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:weightSum="1">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/back"
+                        android:padding="@dimen/padding_recognition_view"
+                        android:text="Caller phone number"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/caller_phone_number"
+
+                        android:layout_width="wrap_content"
+                        android:layout_weight="0.9"
+                        android:background="@drawable/back"
+                        android:padding="8dp"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:weightSum="1">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/back"
+                        android:padding="@dimen/padding_recognition_view"
+                        android:text="Receiver phone number"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/receiver_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="0.9"
+                        android:background="@drawable/back"
+                        android:padding="8dp"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:weightSum="1">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/back"
+                        android:padding="@dimen/padding_recognition_view"
+                        android:text="Recording Date"
+                        android:textSize="18sp" />
+
+                    <TextView
+
+                        android:id="@+id/recording_date"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="0.9"
+                        android:background="@drawable/back"
+                        android:padding="8dp"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:weightSum="1">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/back"
+                        android:padding="@dimen/padding_recognition_view"
+                        android:text="Record start time"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/record_start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="0.9"
+                        android:background="@drawable/back"
+                        android:padding="8dp"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:weightSum="1">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/back"
+                        android:padding="@dimen/padding_recognition_view"
+                        android:text="Record end time"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/record_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="0.9"
+                        android:background="@drawable/back"
+                        android:padding="8dp"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:weightSum="1">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/back"
+                        android:padding="@dimen/padding_recognition_view"
+                        android:text="Duration"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/total_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="0.9"
+                        android:background="@drawable/back"
+                        android:padding="8dp"
+                        android:textSize="18sp" />
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_google_signin_btn_text_light_disabled"
+                android:text="Recognized results"
+
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="@dimen/recognition_view_weight_sum">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@dimen/recognition_view_label_weight"
+                    android:padding="@dimen/padding_recognition_view"
+                    android:text="Phone numbers"
+                    android:background="@drawable/back"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/extracted_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@dimen/recognition_view_text_weight"
+                    android:background="@drawable/back"
+                    android:padding="3dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="@dimen/recognition_view_weight_sum">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@dimen/recognition_view_label_weight"
+                    android:background="@drawable/back"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding_recognition_view"
+                    android:text="Emails"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/extracted_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@dimen/recognition_view_text_weight"
+                    android:background="@drawable/back"
+                    android:padding="3dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="@dimen/recognition_view_weight_sum">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@dimen/recognition_view_label_weight"
+                    android:padding="@dimen/padding_recognition_view"
+                    android:text="Names"
+                    android:background="@drawable/back"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/extracted_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@dimen/recognition_view_text_weight"
+                    android:background="@drawable/back"
+                    android:padding="3dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="@dimen/recognition_view_weight_sum">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@dimen/recognition_view_label_weight"
+                    android:padding="@dimen/padding_recognition_view"
+                    android:text="Text"
+                    android:background="@drawable/back"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/extracted_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@dimen/recognition_view_text_weight"
+                    android:background="@drawable/back"
+                    android:padding="3dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

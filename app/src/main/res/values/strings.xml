@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Speech recognition system</string>
+
+    <!-- Strings related to login -->
+    <string name="permission_denied">Permission is denied</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">Welcome !</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >4 characters</string>
+    <string name="login_failed">Login failed</string>
+    <string name="forgot_password_text">Forgot Password ?</string>
+
+    <!-- Strings related to Facebook login -->
+    <string name="facebook_app_id">370444390316917</string>
+    <string name="fb_login_protocol_scheme">fb370444390316917</string>
+
+    <!-- Strings related to Twitter -->
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">JnGIFQKe2sdNeasQswQ6CbUyR</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">f1Je9lecuUttTGTOGZJhaVAa4NzVLIceYNEH0DC0kpt6b5OvMi</string>
+
+    <!-- Strings related to User Registration -->
+    <string name="user_registration_title">Registration</string>
+    <string name="enter_your_email_hint">Enter Your Email</string>
+    <string name="enter_password_hint">Enter Password</string>
+    <string name="confirmed_password_hint">Confirmed Password</string>
+    <string name="register_button_text">Register</string>
+    <string name="loading">loading ...</string>
+    <string name="registration_failed">"Registration failed"</string>
+    <string name="password_not_match">Password dosen\'t matched</string>
+    <string name="user_already_registered">User already registered</string>
+    <string name="user_not_registered">Invalid User or Password</string>
+
+
+    <string name="zero">0:00</string>
+    <string name="reset_password_title">Reset Password</string>
+    <string name="send_reset_link">Send Reset Request</string>
+    <string name="user_profile">User Profile</string>
+    <string name="recording_list">Recording List</string>
+    <string name="enter_your_name_hint">Enter Your Name</string>
+    <string name="phone_number_hint">Enter Your Phone Number</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="user_name_textView">Name</string>
+    <string name="user_email_textView">Email</string>
+    <string name="phone_number_textView">Phone Number</string>
+    <string name="new_password_textView">New Password</string>
+    <string name="confirmed_password_textView">Confirmed Password</string>
+    <string name="enter_new_password_hint">Enter New Password</string>
+    <string name="recognition_list_title">Recognition List</string>
+    <string name="delete">Delete</string>
+    <string name="title_activity_recogntion_view">RecogntionView</string>
+    <string name="delete_confirmation_message">Are You Sure ?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="switch_record_title">Auto Record</string>
+    <string name="switch_record_summary">Turn this option on or off</string>
+    <string name="switch_auto_record">switch_preference_record</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_audio_record_found">No Audio record found</string>
+    <string name="record_description">Record</string>
+
+</resources>
